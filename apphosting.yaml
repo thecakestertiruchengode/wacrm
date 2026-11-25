@@ -1,0 +1,32 @@
+runConfig:
+  minInstances: 0   # change to 1 later if automations/broadcasts need to run non-stop
+
+env:
+  # Supabase (safe-to-share values: project URL and anon key)
+  - variable: NEXT_PUBLIC_SUPABASE_URL
+    value: https://qoskiaovsnkhevbinroo.supabase.co
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: NEXT_PUBLIC_SUPABASE_ANON_KEY
+    value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFvc2tpYW92c25raGV2Ymlucm9vIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTU1Mjc0OTQsImV4cCI6MjExMTEwMzQ5NH0.3wDZBNCYu-r2f9JNalo7vVw-h6EtV01AskZ_ucWYTqc
+    availability:
+      - BUILD
+      - RUNTIME
+
+  # Language
+  - variable: NEXT_PUBLIC_APP_LOCALE
+    value: en
+    availability:
+      - BUILD
+      - RUNTIME
+
+  # Private values, stored in Firebase Secret Manager (created in Step B)
+  - variable: SUPABASE_SERVICE_ROLE_KEY
+    secret: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFvc2tpYW92c25raGV2Ymlucm9vIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc5NTUyNzQ5NCwiZXhwIjoyMTExMTAzNDk0fQ.fzFWkyvGEQSuVi4hU2Rs-PZnQgDGdUY0nVRMR1DhwA0
+  - variable: ENCRYPTION_KEY
+    secret: e971b242c8754b4990fbd8dc8b6115df9bd2bede088a237778c85ad218174a8e
+  - variable: META_APP_SECRET
+    secret: b65277f9e96a8888e48cf662cd48d442
+  - variable: AUTOMATION_CRON_SECRET
+    secret: thecakestertiruchengodeisaclassicbakeryloacetdintirucehnodespecialisedinmakingcustomisedcakes
