@@ -23,10 +23,10 @@ env:
 
   # Private values, stored in Firebase Secret Manager (created in Step B)
   - variable: SUPABASE_SERVICE_ROLE_KEY
-    secret: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFvc2tpYW92c25raGV2Ymlucm9vIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc5NTUyNzQ5NCwiZXhwIjoyMTExMTAzNDk0fQ.fzFWkyvGEQSuVi4hU2Rs-PZnQgDGdUY0nVRMR1DhwA0
+    secret: supabase-service-role-key
   - variable: ENCRYPTION_KEY
-    secret: e971b242c8754b4990fbd8dc8b6115df9bd2bede088a237778c85ad218174a8e
+    secret: wacrm-encryption-key
   - variable: META_APP_SECRET
-    secret: b65277f9e96a8888e48cf662cd48d442
+    secret: meta-app-secret
   - variable: AUTOMATION_CRON_SECRET
-    secret: thecakestertiruchengodeisaclassicbakeryloacetdintirucehnodespecialisedinmakingcustomisedcakes
+    secret: automation-cron-secret
