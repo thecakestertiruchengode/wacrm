@@ -2,9 +2,8 @@ runConfig:
   minInstances: 0   # change to 1 later if automations/broadcasts need to run non-stop
 
 env:
-  # Supabase (safe-to-share values: project URL and anon key)
-  - variable: NEXT_PUBLIC_SUPABASE_URL
-    value: https://qoskiaovsnkhevbinroo.supabase.co
+  - variable: NEXT_PUBLIC_SITE_URL
+    value: https://wacrm--the-cakester-wacrm.asia-southeast1.hosted.app
     availability:
       - BUILD
       - RUNTIME
